@@ -47,73 +47,82 @@ Project Overview
 This project is divided into two distinct parts:
 
 
-## Part A: Search Engine Bias Analysis: This part involves scraping and analyzing search results from Google, Bing, and Yahoo for the query "Trump and Israel" to explore the nature and extent of algorithmic bias. The analysis compares result frequency, sentiment (polarity), and subjectivity to identify how different engines present information on a sensitive geopolitical topic.
+## Part A: 
+Search Engine Bias Analysis: This part involves scraping and analyzing search results from Google, Bing, and Yahoo for the query "Trump and Israel" to explore the nature and extent of algorithmic bias. The analysis compares result frequency, sentiment (polarity), and subjectivity to identify how different engines present information on a sensitive geopolitical topic.
 
 
 
 
 
 
-## Part B: E-commerce User Behavior & Decision Modeling: This part uses an e-commerce dataset to perform exploratory data analysis (EDA) on user behavior. It then applies a mathematical framework, the Drift Diffusion Model (DDM), to simulate and understand the decision-making process of users leading to a purchase.
+## Part B: 
+E-commerce User Behavior & Decision Modeling: This part uses an e-commerce dataset to perform exploratory data analysis (EDA) on user behavior. It then applies a mathematical framework, the Drift Diffusion Model (DDM), to simulate and understand the decision-making process of users leading to a purchase.
 
 
 
-Part A: Search Engine Bias Analysis
-Objective <a name="objective-a"></a>
+## Part A: Search Engine Bias Analysis
+
+### Objective <a name="objective-a"></a>
 To explore the nature and extent of biases in search results by conducting searches on Google, Bing, and Yahoo for the same query and comparing the results.
 
-Methodology <a name="methodology-a"></a>
+### Methodology
+<a name="methodology-a"></a>
 
-Data Collection: A Python script using Selenium in headless mode was developed to automate searches on Google, Bing, and Yahoo for the query "Trump and Israel".
-
-
-
-
-
-
-HTML Parsing: BeautifulSoup was used to parse the captured HTML and extract search result titles and links based on engine-specific tags.
+### Data Collection: 
+A Python script using Selenium in headless mode was developed to automate searches on Google, Bing, and Yahoo for the query "Trump and Israel".
 
 
 
-Data Analysis: The extracted titles were analyzed using:
-
-
-Word Clouds: To visualize the most frequent terms for each search engine.
-
-
-Sentiment Analysis: To determine the polarity (positive, negative, neutral tone) of the search result titles.
 
 
 
-Subjectivity Analysis: To measure the degree of objective vs. opinion-based content.
+### HTML Parsing: 
+BeautifulSoup was used to parse the captured HTML and extract search result titles and links based on engine-specific tags.
 
 
-Clustering: To group results and identify the thematic diversity of each search engine.
+
+### Data Analysis: The extracted titles were analyzed using:
+
+
+### Word Clouds: To visualize the most frequent terms for each search engine.
+
+
+### Sentiment Analysis: To determine the polarity (positive, negative, neutral tone) of the search result titles.
+
+
+
+### Subjectivity Analysis: To measure the degree of objective vs. opinion-based content.
+
+
+### Clustering: To group results and identify the thematic diversity of each search engine.
 
 Key Findings <a name="key-findings-a"></a>
 The analysis revealed distinct biases for each search engine:
 
 
-Google: Exhibits a "diversity bias". It returns a wide array of content, including political analysis, social media trends (e.g., "TikTok," "Mr Beast"), and policy news. The results are largely neutral in tone (low polarity) but are highly subjective, indicating a reliance on opinionated content.
+### Google: 
+Exhibits a "diversity bias". It returns a wide array of content, including political analysis, social media trends (e.g., "TikTok," "Mr Beast"), and policy news. The results are largely neutral in tone (low polarity) but are highly subjective, indicating a reliance on opinionated content.
 
 
 
 
 
 
-Bing: Demonstrates a "centralizing bias". It focuses on a narrower range of policy-centric and analytical content, prioritizing mainstream political discourse.
+### Bing: 
+Demonstrates a "centralizing bias". It focuses on a narrower range of policy-centric and analytical content, prioritizing mainstream political discourse.
 
 
 
 
 
-Yahoo: Shows a "simplification bias". It emphasizes traditional journalism from international sources (e.g., "BBC," "Al Jazeera") but categorizes them into fewer, less-nuanced groups.
+### Yahoo: 
+Shows a "simplification bias". It emphasizes traditional journalism from international sources (e.g., "BBC," "Al Jazeera") but categorizes them into fewer, less-nuanced groups.
 
 
 
 
 
-Part B: E-commerce User Behavior & Decision Modeling
+## Part B: E-commerce User Behavior & Decision Modeling
 Objective <a name="objective-b"></a>
 To analyze user behavior on an e-commerce platform to understand the key drivers of revenue and to model the cognitive process of purchase decisions using the Drift Diffusion Model (DDM).
 
